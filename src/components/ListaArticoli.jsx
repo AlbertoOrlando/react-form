@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons"
 
 // dati lista articoli
 const articoli = [
@@ -28,8 +30,8 @@ export default function ListaArticoli() {
                 <ul>
                     {lista.map((articolo, index) => (
                         <li key={index}>{articolo}
-                            {/* <span><FontAwesomeIcon icon={faTrashCan} onClick={() => rimuoviArticolo(index)
-                            } /></span> */}
+                            <span><FontAwesomeIcon icon={faTrashCan} onClick={() => rimuoviArticolo(index)
+                            } /></span>
                         </li>
                     ))}
                 </ul>
